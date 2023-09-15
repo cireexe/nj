@@ -1,0 +1,476 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif; /* Añade una fuente de texto genérica */
+}
+
+.banner h1{
+    text-align: center;
+    color: #ffffff;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:  rgb(37, 52, 99);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.alquilado-cartel{
+        text-align: center;
+        background-color: #c5dffd;
+        border-radius: 1rem;
+        margin-top: 10px;
+}
+
+.h2 {
+    text-align: center; /* Alinea el texto al centro */
+    margin: 0 auto; /* Centra horizontalmente el contenedor */
+    margin-top: 2rem;
+}
+
+.btn-volver {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.banner img {
+    max-height: 50px;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+/* Estilos para la galería de imágenes */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.gallery-item {
+    width: 33.33%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para el carrusel en vista móvil */
+#mobileCarousel {
+    margin-top: 20px; /* Espacio superior */
+    border-radius: 10px; /* Borde redondeado */
+    overflow: hidden; /* Oculta las esquinas extra */
+}
+
+/* Estilos para las flechas de navegación del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Ancho de las flechas */
+    color: #fff; /* Color del icono de flecha */
+    border-radius: 5px; /* Borde redondeado para las flechas */
+}
+
+/* Estilo para el ícono de flecha */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    font-size: 30px; /* Tamaño del ícono de flecha */
+}
+
+/* Estilos para los indicadores del carrusel */
+.carousel-indicators {
+    margin-top: 10px; /* Espacio superior de los indicadores */
+}
+
+.carousel-indicators li {
+    background-color: #555; /* Color del indicador inactivo */
+    border: 1px solid #777; /* Borde del indicador inactivo */
+    border-radius: 50%; /* Borde redondeado para los indicadores */
+}
+
+.carousel-indicators .active {
+    background-color: #007bff; /* Color del indicador activo */
+    border-color: #007bff; /* Borde del indicador activo */
+}
+
+
+.datos-local, .icono, .descripcion {
+    margin-top: -30px; /* Agrega un espacio vertical de 20px por encima de los elementos */
+}
+
+/* Estilos para los iconos y datos */
+.datos-local {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+    margin-left: 12rem;
+    margin-top: -27rem;
+    padding: 20px;
+}
+
+.dato {
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    margin-left: -0.1rem;
+    text-align: center;
+}
+
+/* Añadir un nuevo estilo para agrupar en filas de tres */
+@media (max-width: 992px) {
+    .dato {
+        width: calc(33.33% - 10px);
+    }
+}
+.dato img {
+    max-width: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.dato span {
+    text-align: center;
+}
+
+.descripcion {
+    width: 540px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow-y: auto; /* Cambio de overflow a overflow-y */
+    white-space: pre-wrap; /* Cambio a pre-wrap para conservar espacios y hacer saltos de línea */
+    word-wrap: break-word; /* Añadida propiedad para cortar palabras largas */
+    margin-left: 11rem;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+    padding: 20px;
+    
+}
+
+.descripcion-text {
+    /* Estilos para hacer que el texto se desplace verticalmente */
+    max-height: 300px; /* Ajusta esta altura según tus preferencias */
+    overflow: auto;
+}
+
+
+.descripcion h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.descripcion-content {
+    max-width: 800px;
+    width: 100%; /* Añade esta propiedad */
+    min-height: 100px; /* Establece un alto mínimo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos del formulario */
+.contact-form {
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /* Ocupa todo el ancho disponible en dispositivos móviles */
+    margin-left: 0; /* Elimina el margen izquierdo */
+    margin-right: 0; /* Elimina el margen derecho */
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(209, 208, 208);
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #4ec58e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para la caja de luz */
+.lightbox-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    overflow: hidden;
+    text-align: center;
+}
+
+.lightbox-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lightbox-content img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 4rem;
+    color: #e7e3e3;
+    cursor: pointer;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 3rem;
+    color: #e7e3e3;
+    cursor: pointer;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.lightbox-arrow.prev {
+    left: 15px;
+}
+
+.lightbox-arrow.next {
+    right: 15px;
+}
+
+/* Estilos para la sección de "Otros Locales Disponibles" */
+.otros-locales {
+    margin-top: 50px;
+    margin-bottom: 2rem;
+    text-align:center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    margin-right: 0;
+    margin-right: -0.5rem;
+}
+
+.lista-locales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    align-items: flex-start;
+    text-align: right;
+    flex-direction: row;
+    align-items: right;
+    text-align: right;
+}
+
+.local-item {
+    width: calc(50% - 8px);
+    margin: 4px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    align-items: right;
+
+}
+
+.local-item img {
+    max-width: 130px;
+    height: auto;
+    border-radius: 3px;
+    margin-top: 20px;
+
+}
+
+.local-item h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.local-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #4ec58e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.local-item a:hover {
+    background-color: #2d8b72;
+}
+
+/* Estilo para el botón "Ver Más" */
+.ver-mas-button {
+    display: none;
+    margin-top: 20px;
+}
+
+.ver-mas-button button {
+    width: 100%;
+    background-color: #0057b38c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: 20rem;
+    text-align: center;
+}
+
+.ver-mas-button button:hover {
+    background-color: #0057b3c3;
+}
+
+@media (max-width: 768px) {
+    .lista-locales {
+        width: calc(50% + 8px);
+        text-align: center;
+    }
+
+    .descripcion{
+        width: 370px;
+        margin-left: -0.5rem;
+    }
+
+    .image-gallery {
+        display: none;
+    }
+
+    .gallery-container {
+        display: block;
+    }
+
+    .carousel-item {
+        text-align: center;
+    }
+
+    .carousel-item img {
+        max-width: 100%;
+        height: auto;
+        display: inline-block;
+    }
+
+    .contact-form {
+        margin-top: 2rem;
+    }
+
+    .otros-locales {
+        margin-bottom: 10rem;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .local-item img {
+        max-width: 100%;
+        max-height: none;
+        height: auto;
+        border-radius: 3px;
+        text-align: center;
+    }
+
+    .lista-locales {
+        align-items: center;
+        margin: auto;
+    }
+
+    .datos-local {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin-top: -7rem;
+        margin-left: 0.1rem;
+    }
+
+    .dato {
+        width: calc(33.33% - 20px);
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        margin-left: -0.1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Pantallas más grandes (PC) */
+    .ver-mas-button {
+        display: block;
+    }
+}

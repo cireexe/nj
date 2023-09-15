@@ -1,0 +1,258 @@
+body, h1, h2, p, img, video, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', serif;
+}
+
+ /* Estilo para el encabezado transparente */
+ .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilos para el banner */
+.banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0); /* Fondo transparente */
+    z-index: 2; /* Para superponer el banner al video */
+}
+
+.logo-left img {
+    width: 5rem;
+    height: auto;
+    margin-top: 4px;
+    margin-left: 3rem;
+}
+
+.logo-right img{
+    width: 2rem;
+    margin-right: -5rem;
+}
+
+.login-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Estilos para el video-presentacion */
+.video-presentacion {
+    /* Ajusta los estilos según tus necesidades */
+    position: relative;
+    z-index: 1; /* Z-index inferior para que el video quede detrás del banner */
+}
+
+.video-presentacion.show {
+    opacity: 1; /* Mostrar elemento */
+    transform: translateY(0); /* Sin desplazamiento */
+}
+
+.video-presentacion video {
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+/* Estilos para el texto superpuesto en el video */
+.carousel-text-container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%; /* Ajusta el ancho según tu preferencia */
+    max-width: 900px; /* Limita el ancho máximo */
+    margin: auto; /* Centra horizontalmente */
+}
+
+.carousel-text {
+    font-size: 40px; /* Tamaño de fuente relativo al ancho de la pantalla */
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+    transform: translateX(-5vw); /* Desplazamiento relativo al ancho de la pantalla */
+    text-align: center;
+}
+
+.carousel-text.active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 1s, transform 1s;
+}
+
+/* Estilos para los botones superpuestos en el video */
+.botones-superior {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 70%; /* Ajusta el ancho según tu preferencia */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.botones-superior button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #ffffff;
+    font-size: 2vw; /* Tamaño de fuente relativo al ancho de la pantalla */
+    padding: 2vh 4vw; /* Ajusta el padding relativo al tamaño de la pantalla */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    margin: 2vh 0; /* Margen vertical relativo al tamaño de la pantalla */
+    border-radius: 1rem;
+}
+
+.botones-superior button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 1rem;
+}
+
+.botones-superior.show {
+    opacity: 1;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    overflow-x: auto; /* Agrega desplazamiento horizontal si la tabla es demasiado ancha */
+    margin-bottom: 50px;
+}
+
+/* Estilos de la sección de locales */
+.locales-section {
+    background-color: #ffffff;
+    padding: 50px 0;
+    text-align: center; /* Alinea el texto y elementos al centro */
+}
+
+.locales-section h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+/* Estilos para la cuadrícula de locales (debes agregar las imágenes y botones) */
+.locales-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Distribuye automáticamente en columnas de 4 */
+    gap: 20px; /* Espacio entre los locales */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.local {
+    text-align: center;
+    max-width: 200px;
+    margin: 15px; /* Espacio entre los locales */
+}
+
+.local img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ver-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    margin-top: 10px;
+    border-radius: 1rem;
+}
+
+.ver-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 1rem;
+}
+
+.ver-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 1rem;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 767px) {
+    .carousel-text {
+        font-size: 10px;
+    }
+
+    .logo-left img {
+        width: 1.5rem;
+        height: auto;
+        margin-top: 1px;
+        margin-left: -0.5rem;
+    }
+    
+    .logo-right img{
+        width: 1rem;
+    }
+}
+
+@media (min-width: 400px) {
+    .locales-grid {
+        grid-template-columns: repeat(2, 1fr); /* Mostrar 2 columnas de locales en pantallas grandes */
+        align-items: center;
+        gap:-20px;
+       
+    }
+    .logo-left{
+        margin-left: 2rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .locales-grid {
+        grid-template-columns: repeat(3, 1fr); /* Mostrar 2 columnas de locales en pantallas grandes */
+        align-items: center;
+    }
+    .logo-left{
+        margin-left: -2rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .locales-grid {
+        grid-template-columns: repeat(4, 1fr); /* Mostrar 4 columnas de locales en pantallas extra grandes */
+        align-items: center;
+    }
+
+    .logo-left{
+        margin-left: 1rem;
+    }
+}

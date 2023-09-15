@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+.header {
+    background-color:rgb(37, 52, 99);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.complejo-title {
+    font-size: 24px; /* Tamaño de fuente deseado */
+    font-weight: bold; /* Negrita */
+    color: #333; /* Color de texto deseado */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.table-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    overflow-x: auto; /* Agrega desplazamiento horizontal si la tabla es demasiado ancha */
+    margin-bottom: 50px;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container th, .table-container td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.table-container th {
+    background-color: #f2f2f2;
+}
+
+.add-local-button a, .delete-local-button a {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.delete-local-button {
+    display: inline-block;
+    background-color: #db3434;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.editar-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+/* Estilos para pantallas más pequeñas, como dispositivos móviles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Ajusta el espaciado en pantallas más pequeñas */
+    }
+
+    .table-container {
+        padding: 10px; /* Ajusta el espaciado interior en pantallas más pequeñas */
+    }
+
+    .add-local-button a, .delete-local-button a, .editar-button {
+        padding: 5px 10px; /* Ajusta el espaciado de los botones en pantallas más pequeñas */
+    }
+}

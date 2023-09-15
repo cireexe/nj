@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: -10rem;
+    margin: 0;
+    
+}
+
+.container {
+    max-width: 80%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    padding: 7px;
+    margin-bottom: 3px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    width: 100%;
+}
+
+select {
+    width: 100%;
+}
+
+button[type="submit"] {
+    padding: 10px 15px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+label[for="descripcion"],
+textarea[name="descripcion"] {
+    display: block;
+    margin-bottom: 6px;
+    width: 100%;
+}
+
+textarea[name="descripcion"] {
+    padding: 10px;
+    height: auto;
+    min-height: 80px; /* Ajusta la altura mínima según tu preferencia */
+    width: 100%;
+    resize: vertical;
+    overflow-y: scroll;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+/* Estilos para pantallas más pequeñas, como dispositivos móviles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px; /* Ajusta el tamaño de la fuente según tus preferencias */
+    }
+
+    label {
+        font-size: 16px; /* Ajusta el tamaño de la fuente para etiquetas */
+    }
+
+
+    button[type="submit"] {
+        font-size: 16px; /* Ajusta el tamaño de la fuente para el botón de envío */
+        margin-top: 10px; /* Espaciado superior para el botón de envío */
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+        margin-bottom: 5px; /* Espaciado más pequeño entre los campos de entrada */
+    }
+
+    label[for="descripcion"],
+    textarea[name="descripcion"] {
+        margin-bottom: 2px; /* Espaciado más pequeño para las etiquetas y descripción */
+    }
+}
