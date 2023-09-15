@@ -12,7 +12,7 @@
 
     // Verifica si el usuario no está autenticado
     if (!isset($_SESSION['username'])) {
-        header("Location: Login/index.php"); // Redirige a la página de inicio de sesión
+        header("Location: index.php"); // Redirige a la página de inicio de sesión
         exit();
     }
     ?>

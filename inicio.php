@@ -11,10 +11,11 @@
 <body>
     <!-- Video presentación -->
     <div class="video-presentacion">
-        <video autoplay muted loop>
-            <source src="login/images/icons/videoejemplo.mp4" type="video/webm">
-            Tu navegador no soporta el elemento de video.
-        </video>
+    <video autoplay muted loop>
+  <source src="Login/images/videoejemplo.mp4" type="video/mp4">
+  <source src="Login/images/videoejemplo.webm" type="video/webm">
+  Tu navegador no soporta el elemento de video.
+</video>
         <div class="carousel-text-container">
             <h2 class="carousel-text active">   HOLA,   BIENVENIDOS</h2>
             <h2 class="carousel-text">SOMOS UNA EMPRESA VIGENTE EN EL MERCADO DESDE EL 2020</h2>
@@ -36,7 +37,7 @@
             <a href="inicio.php"><img src="Login/images/negro.png" alt="Logo Izquierdo"></a>
         </div>
         <div class="logo-right">
-        <a class="" href="login/index.php"> <img src="Login/images/usuario-de-perfil.png" alt="Logo Derecho">  
+        <a class="" href="index.php"> <img src="Login/images/usuario-de-perfil.png" alt="Logo Derecho">  
             </a>
         </div>
     </div>

@@ -181,7 +181,7 @@ if (isset($_GET['id'])) {
             <p><?php echo $row['metros_cuadrados']; ?> mts2</p>
         </div>
         <div class="dato">
-            <img src="Login/images/reloj.png" alt="Icono Antigüedad"> <!-- Agregar icono de antigüedad -->
+            <img src="Login/images/calendario.png" alt="Icono Antigüedad"> <!-- Agregar icono de antigüedad -->
             <p><?php echo $row['antiguedad']; ?> </p> <!-- Mostrar la antigüedad -->
         </div><br>
         <div class="dato">

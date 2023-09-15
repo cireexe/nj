@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Registro</title>
-      <!--===============================================================================================-->	
+	<title>Iniciar sesion</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -21,27 +23,33 @@
 <!--===============================================================================================-->	
 	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="Login/css/util.css">
+	<link rel="stylesheet" type="text/css" href="Login/css/main.css">
 <!--===============================================================================================-->
 </head>
 <body>
-    <form action="registro_process.php" method="POST">
+
+					
+	<form action="login.php" method="POST">
 
     <div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
 				<form class="login100-form validate-form">
 					<span class="login100-form-title p-b-26">
-						REGISTRO
+						BIENVENIDO
 					</span>
 
-        <label>usuario:</label>
+        <label>Usuario:</label><br>
         <input class="barra" type="usuario" name="usuario" required><br><br>
-        <label>Contraseña:</label>
-        <input class="barra" type="password" name="pass" required><br><br>
-        <input class="iniciar" type="submit" value="Registrarse"> <br>
+        <label>Contraseña:</label> 
+        <input class="barra" type="password" name="password" required><br><br>
+
+        <input class="iniciar" type="submit" value="Iniciar Sesión"><br>
+		<h7 class="pregunta">¿No tienes cuenta? </h7> 
+		<a class="registro" href="registro_form.php">Registrarse</a> 
     </form>
-    <a href="javascript:history.back()"><p class="volver">Volver</p></a>
+	
+
 </body>
 </html>
