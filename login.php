@@ -26,7 +26,7 @@ if (isset($_SESSION['username'])) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Obtener los datos del formulario
     $usuario = $_POST['usuario'];
-    $pass = $_POST['password'];
+    $pass = $_POST['pass'];
 
     // Consulta para verificar las credenciales
     $query = "SELECT * FROM login WHERE usuario = '$usuario' AND pass = '$pass'";

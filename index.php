@@ -43,7 +43,7 @@
         <label>Usuario:</label><br>
         <input class="barra" type="usuario" name="usuario" required><br><br>
         <label>Contraseña:</label> 
-        <input class="barra" type="password" name="password" required><br><br>
+        <input class="barra" type="pass" name="pass" required><br><br>
 
         <input class="iniciar" type="submit" value="Iniciar Sesión"><br>
 		<h7 class="pregunta">¿No tienes cuenta? </h7> 

@@ -1,9 +1,9 @@
 <?php
 // Datos de conexión a la base de datos
 $servername = "localhost";
-$username = "id21264493_nj";
+$username = "id21265036_nj";
 $password = "Pelegrini.8052";
-$dbname = "id21264493_3d";
+$dbname = "id21265036_3d";
 
 // Conexión a la base de datos
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -21,9 +21,8 @@ $pass = $_POST['pass'];
 $query = "INSERT INTO login (usuario, pass) VALUES ('$usuario', '$pass')";
 
 if ($conn->query($query) === TRUE) {
-    echo "Registro exitoso. ¡Bienvenido!";
     // Redireccionar a la página de inicio
-    header("Location:index.php");
+    header("Location: inicio_admi.php");
     exit(); // Asegura que el script se detenga después de la redirección
 } else {
     echo "Error al registrar: " . $conn->error;
@@ -32,9 +31,3 @@ if ($conn->query($query) === TRUE) {
 // Cerrar la conexión
 $conn->close();
 ?>
-
-
-
-
-
-

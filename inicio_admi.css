@@ -91,11 +91,13 @@ h2 {
 /* Estilos para pantallas más pequeñas, como dispositivos móviles */
 @media (max-width: 768px) {
     .container {
-        padding: 10px; /* Ajusta el espaciado en pantallas más pequeñas */
+        width: 100%; /* Hace que el contenedor ocupe todo el ancho de la pantalla */
+        padding: 30px; /* Ajusta el espaciado en pantallas más pequeñas */
     }
 
     .table-container {
-        padding: 10px; /* Ajusta el espaciado interior en pantallas más pequeñas */
+        width: 100%; /* Hace que el contenedor de la tabla ocupe todo el ancho de la pantalla */
+        padding: 5px; /* Ajusta el espaciado interior en pantallas más pequeñas */
     }
 
     .add-local-button a, .delete-local-button a, .editar-button {

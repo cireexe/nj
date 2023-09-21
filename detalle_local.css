@@ -128,7 +128,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease;
-    margin-left: 12rem;
+    margin-left: 7rem;
     margin-top: -27rem;
     padding: 20px;
 }
@@ -158,14 +158,14 @@ body {
 }
 
 .descripcion {
-    width: 510px;
+    width: 535px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     overflow-y: auto; /* Cambio de overflow a overflow-y */
     white-space: pre-wrap; /* Cambio a pre-wrap para conservar espacios y hacer saltos de línea */
     word-wrap: break-word; /* Añadida propiedad para cortar palabras largas */
-    margin-left: 11rem;
+    margin-left: 6rem;
     margin-right: auto;
     display: flex;
     flex-direction: column;
@@ -401,7 +401,7 @@ body {
 
 @media (max-width: 768px) {
     .lista-locales {
-        width: calc(50% + 8px);
+        width: calc(80% + 8px);
         text-align: center;
     }
 
@@ -446,8 +446,9 @@ body {
         text-align: center;
     }
 
-    .local-item{
-        width: -40px;
+    .local-item h3 {
+        margin-top: 5px;
+        font-size: 13px;
     }
 
     .lista-locales {
@@ -465,7 +466,7 @@ body {
     }
 
     .dato {
-        width: calc(33.33% - 20px);
+        width: calc(33.33% - 10px);
         margin-bottom: 20px;
         box-sizing: border-box;
         margin-left: -0.1rem;
